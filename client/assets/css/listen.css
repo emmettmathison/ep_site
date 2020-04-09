@@ -1,0 +1,62 @@
+body {
+    background: rgb(147, 186, 255);
+}
+
+.titles {
+    top: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 2em;
+    position: relative;
+}
+
+#blueSky {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+.circle-container {
+  position: absolute;
+  top: 10%;
+  width: 40vw;
+  height: 80vh;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  left: 31%;
+  min-width: 480px;
+  text-align: center
+}
+.circle {
+    z-index: 10;
+    border: 3px solid rgb(255, 99, 242) !important;
+  position: absolute;
+  left: 35%;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+#word-deg0 {
+    top: 0vh;
+  border: 1px solid black;
+}
+#guoying-deg72 {
+  border: 1px solid orange;
+  transform: translate(108%, 77%);
+}
+#sound-deg144 {
+  border: 1px solid red;
+  transform: translate(70%, 200%);
+}
+#trona-deg216 {
+  border: 1px solid blue;
+  transform: translate(-70%, 200%)
+}
+#withDay-deg288 {
+  border: 1px solid purple;
+  transform: translate(-108%, 77%);
+
+}
