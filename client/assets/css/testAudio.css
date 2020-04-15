@@ -1,0 +1,14 @@
+
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+#playlist .current-song a{
+    color: blue
+}
