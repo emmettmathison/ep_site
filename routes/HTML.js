@@ -5,6 +5,11 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname, "../client/listen.html"));
     });
 
+    app.get("/testaudio", function(req, res) {
+        res.sendFile(path.join(__dirname, "../client/custom_audio.html"));
+    });
+
+
     app.get("*", function(req, res) {
         res.sendFile(path.join(__dirname, "../client/landing.html"));
     })

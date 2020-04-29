@@ -1,21 +1,9 @@
 var dropdownBase = $("#dropdownBase");
 var dropdownLinks = $(".dropdownLinks");
-let dropdownText1 = $("");
 
 audioPlayer();
 
 var btnValue = dropdownBase.attr("value");
-
-var borderNames = ["word", "guoying", "sound", "trona", "day"];
-var textNames = [
-  "word",
-  "guoying",
-  "sound",
-  "trona",
-  "day",
-];
-
-nextSong();
 
 dropdownBase.on("click", function () {
   if (btnValue === "unclicked") {
@@ -30,6 +18,11 @@ dropdownBase.on("click", function () {
     btnValue = "unclicked";
   }
 });
+
+var textNames = ["word", "guoying", "sound", "trona", "day"];
+var borderNames = ["word", "guoying", "sound", "trona", "day"];
+
+nextSong();
 
 var currentSong = 0;
 
@@ -94,8 +87,9 @@ function nextSong() {
 
 function illuminate() {
   $(".circle").css({ border: "3px solid white" });
-    $(".titles").css({ color: "white" });
-    $("." + borderNames[currentSong]).css({"border" : "3px solid rgb(250, 49, 234)"});
-    $("#" + textNames[currentSong]).css({"color" : "rgb(250, 49, 234)"});
-    
+  $(".titles").css({ color: "white" });
+  $("." + borderNames[currentSong]).css({
+    border: "3px solid rgb(250, 49, 234)",
+  });
+  $("#" + textNames[currentSong]).css({ color: "rgb(250, 49, 234)" });
 }

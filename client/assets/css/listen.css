@@ -13,9 +13,9 @@ body {
 }
 
 #audioContainer {
-  margin: 0 auto;
-  top: 90vh;
-  position: relative;
+  margin-left: 40%;
+  top: 88vh;
+  position: absolute;
   width: 20vw;
 }
 
@@ -25,12 +25,12 @@ audio:focus {
 
 .links {
   list-style: none;
-  float: right;
   top: 5vh;
   color: white;
   background-color: transparent;
-  border: none;
+  border: 1px solid black;
   display: block;
+  z-index: 22;
 }
 
 #dropdownBase {
@@ -65,7 +65,7 @@ audio:focus {
 }
 
 .dropdownLinks:hover {
-  color: rgb(250, 49, 234);
+  color: rgb(255, 99, 242);
   text-decoration: none;
 }
 
@@ -77,7 +77,7 @@ audio:focus {
 }
 
 #dropdownBase:hover {
-  color: rgb(250, 49, 234);
+  color: rgb(255, 99, 242);
 }
 
 #dropdownBase:focus {

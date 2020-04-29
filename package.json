@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/emmettmathison/ep_site#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mediaelement": "^4.2.16"
   }
 }
