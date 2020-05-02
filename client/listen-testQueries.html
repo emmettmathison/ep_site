@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/listen-testQueries.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <video autoplay muted loop id="blueSky">
+        <source src="assets/media/blue_sky_moving.mp4" type="video/mp4">
+    </video>
+
+    <div class="links">
+        <ul>
+            <li><button id="dropdownBase" value="unclicked" href="#">to <i id="arrowSide">▸</i></button></li>
+            <li><a class="dropdownLinks" id="spotify">spotify</a></li>
+            <li><a class="dropdownLinks" id="appleMusic">apple music</a></li>
+            <li><a class="dropdownLinks" id="tidal">tidal</a></li>
+            <li><a class="dropdownLinks" id="bandcamp">bandcamp</a></li>
+            <li><a class="dropdownLinks" id="download">download</a></li>
+        </ul>
+        <a id="download" href="#">download</a>
+    </div>
+
+    <div id="audioContainer">
+        <audio src="" autplay controls id="audioPlayer" type="audio/mp3"></audio>
+    </div>
+
+
+    <ul id="songs">
+        <li class="current-song"><a href="assets/media/1. word.mp3"></a></li>
+        <li><a href="assets/media/2. guoying.mp3"></a></li>
+        <li><a href="assets/media/3. sound.mp3"></a></li>
+        <li><a href="assets/media/4. trona.mp3"></a></li>
+        <li><a href="assets/media/5. with day.mp3"></a></li>
+    </ul>
+
+
+    <div class="circle-container">
+        <div class="circle word" id="word-deg0">
+            <div class="titles" id="word">word</div>
+        </div>
+        <div class="circle guoying" id="guoying-deg72">
+            <div class="titles" id="guoying">guoying</div>
+        </div>
+        <div class="circle sound" id="sound-deg144">
+            <div class="titles" id="sound">sound</div>
+        </div>
+        <div class="circle trona" id="trona-deg216">
+            <div class="titles" id="trona">trona</div>
+        </div>
+        <div class="circle day" id="withDay-deg288">
+            <div class="titles" id="day">day</div>
+        </div>
+    </div>
+
+    <script src="./assets/js/listen.js"></script>
+
+
+</body>
+
+</html>
